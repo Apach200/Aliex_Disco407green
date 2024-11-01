@@ -361,7 +361,7 @@ int main(void)
       HAL_Delay(100);
 
 		Local_Count=0;
-		  OD_PERSIST_COMM.x6000_nucleo_VAR64_6000=0;
+		  OD_PERSIST_COMM.x6000_ALiex_Disco_VAR32_6000=0;
 
 		  while (1)
 		  {
@@ -383,9 +383,9 @@ int main(void)
 			  {
 				Ticks = HAL_GetTick();
 
-				OD_PERSIST_COMM.x6000_nucleo_VAR64_6000++;
+				OD_PERSIST_COMM.x6000_ALiex_Disco_VAR32_6000++;
 
-				tmp32u_0 = OD_PERSIST_COMM.x6000_nucleo_VAR64_6000;
+				tmp32u_0 = OD_PERSIST_COMM.x6000_ALiex_Disco_VAR32_6000;
 
 				//CO_TPDOsendRequest(&canOpenNodeSTM32.canOpenStack->TPDO[0] );
 
@@ -396,7 +396,7 @@ int main(void)
 				Local_Count = Local_Count%4;
 
 				if(Local_Count==0){
-									OD_PERSIST_COMM.x6038_nucleo_Array[0]++;
+									OD_PERSIST_COMM.x6039_ALiex_Disco_Array[0]++;
 								  }
 
 				CO_TPDOsendRequest(&canOpenNodeSTM32.canOpenStack->TPDO[Local_Count] );
