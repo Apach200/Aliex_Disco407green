@@ -16,14 +16,14 @@
 
         Created:      23.11.2020 16:00:00
         Created By:   
-        Modified:     21.10.2024 23:58:51
+        Modified:     01.11.2024 18:47:10
         Modified By:  
 
     Device Info:
-        Vendor Name:  
-        Vendor ID:    
-        Product Name: Nucleo_F072
-        Product ID:   0x072
+        Vendor Name:  Chromos_A
+        Vendor ID:    0xAFFEFFd
+        Product Name: ALiex_Disco
+        Product ID:   0x3A
 
         Description:  
 *******************************************************************************/
@@ -45,7 +45,7 @@
 #define OD_CNT_SDO_SRV 1
 #define OD_CNT_SDO_CLI 1
 #define OD_CNT_RPDO 1
-#define OD_CNT_TPDO 12
+#define OD_CNT_TPDO 3
 
 
 /*******************************************************************************
@@ -55,7 +55,7 @@
 #define OD_CNT_ARR_1010 4
 #define OD_CNT_ARR_1011 4
 #define OD_CNT_ARR_1016 8
-#define OD_CNT_ARR_6038 15
+#define OD_CNT_ARR_6039 15
 
 
 /*******************************************************************************
@@ -128,78 +128,6 @@ typedef struct {
         uint8_t SYNCStartValue;
     } x1802_TPDOCommunicationParameter;
     struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1803_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1804_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1805_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1806_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1807_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1808_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x1809_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x180A_TPDOCommunicationParameter;
-    struct {
-        uint8_t highestSub_indexSupported;
-        uint32_t COB_IDUsedByTPDO;
-        uint8_t transmissionType;
-        uint16_t inhibitTime;
-        uint16_t eventTimer;
-        uint8_t SYNCStartValue;
-    } x180B_TPDOCommunicationParameter;
-    struct {
         uint8_t numberOfMappedApplicationObjectsInPDO;
         uint32_t applicationObject1;
         uint32_t applicationObject2;
@@ -232,111 +160,12 @@ typedef struct {
         uint32_t applicationObject7;
         uint32_t applicationObject8;
     } x1A02_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A03_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A04_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A05_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A06_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A07_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A08_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A09_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A0A_TPDOMappingParameter;
-    struct {
-        uint8_t numberOfMappedApplicationObjectsInPDO;
-        uint32_t applicationObject1;
-        uint32_t applicationObject2;
-        uint32_t applicationObject3;
-        uint32_t applicationObject4;
-        uint32_t applicationObject5;
-        uint32_t applicationObject6;
-        uint32_t applicationObject7;
-        uint32_t applicationObject8;
-    } x1A0B_TPDOMappingParameter;
-    uint32_t x6000_nucleo_VAR32_6000;
-    uint32_t x6001_nucleo_VAR32_6001;
-    uint64_t x6002_nucleo_VAR64_6002;
-    uint32_t x6003_nucleo_VAR32_6003;
-    uint8_t x6038_nucleo_Array_sub0;
-    uint16_t x6038_nucleo_Array[OD_CNT_ARR_6038];
+    uint32_t x6000_ALiex_Disco_VAR32_6000;
+    uint32_t x6001_ALiex_Disco_VAR32_6001;
+    uint64_t x6002_ALiex_Disco_VAR64_6002;
+    uint32_t x6003_ALiex_Disco_VAR32_6003;
+    uint8_t x6039_ALiex_Disco_Array_sub0;
+    uint16_t x6039_ALiex_Disco_Array[OD_CNT_ARR_6039];
 } OD_PERSIST_COMM_t;
 
 typedef struct {
@@ -393,32 +222,14 @@ extern OD_ATTR_OD OD_t *OD;
 #define OD_ENTRY_H1800 &OD->list[19]
 #define OD_ENTRY_H1801 &OD->list[20]
 #define OD_ENTRY_H1802 &OD->list[21]
-#define OD_ENTRY_H1803 &OD->list[22]
-#define OD_ENTRY_H1804 &OD->list[23]
-#define OD_ENTRY_H1805 &OD->list[24]
-#define OD_ENTRY_H1806 &OD->list[25]
-#define OD_ENTRY_H1807 &OD->list[26]
-#define OD_ENTRY_H1808 &OD->list[27]
-#define OD_ENTRY_H1809 &OD->list[28]
-#define OD_ENTRY_H180A &OD->list[29]
-#define OD_ENTRY_H180B &OD->list[30]
-#define OD_ENTRY_H1A00 &OD->list[31]
-#define OD_ENTRY_H1A01 &OD->list[32]
-#define OD_ENTRY_H1A02 &OD->list[33]
-#define OD_ENTRY_H1A03 &OD->list[34]
-#define OD_ENTRY_H1A04 &OD->list[35]
-#define OD_ENTRY_H1A05 &OD->list[36]
-#define OD_ENTRY_H1A06 &OD->list[37]
-#define OD_ENTRY_H1A07 &OD->list[38]
-#define OD_ENTRY_H1A08 &OD->list[39]
-#define OD_ENTRY_H1A09 &OD->list[40]
-#define OD_ENTRY_H1A0A &OD->list[41]
-#define OD_ENTRY_H1A0B &OD->list[42]
-#define OD_ENTRY_H6000 &OD->list[43]
-#define OD_ENTRY_H6001 &OD->list[44]
-#define OD_ENTRY_H6002 &OD->list[45]
-#define OD_ENTRY_H6003 &OD->list[46]
-#define OD_ENTRY_H6038 &OD->list[47]
+#define OD_ENTRY_H1A00 &OD->list[22]
+#define OD_ENTRY_H1A01 &OD->list[23]
+#define OD_ENTRY_H1A02 &OD->list[24]
+#define OD_ENTRY_H6000 &OD->list[25]
+#define OD_ENTRY_H6001 &OD->list[26]
+#define OD_ENTRY_H6002 &OD->list[27]
+#define OD_ENTRY_H6003 &OD->list[28]
+#define OD_ENTRY_H6039 &OD->list[29]
 
 
 /*******************************************************************************
@@ -446,32 +257,14 @@ extern OD_ATTR_OD OD_t *OD;
 #define OD_ENTRY_H1800_TPDOCommunicationParameter &OD->list[19]
 #define OD_ENTRY_H1801_TPDOCommunicationParameter &OD->list[20]
 #define OD_ENTRY_H1802_TPDOCommunicationParameter &OD->list[21]
-#define OD_ENTRY_H1803_TPDOCommunicationParameter &OD->list[22]
-#define OD_ENTRY_H1804_TPDOCommunicationParameter &OD->list[23]
-#define OD_ENTRY_H1805_TPDOCommunicationParameter &OD->list[24]
-#define OD_ENTRY_H1806_TPDOCommunicationParameter &OD->list[25]
-#define OD_ENTRY_H1807_TPDOCommunicationParameter &OD->list[26]
-#define OD_ENTRY_H1808_TPDOCommunicationParameter &OD->list[27]
-#define OD_ENTRY_H1809_TPDOCommunicationParameter &OD->list[28]
-#define OD_ENTRY_H180A_TPDOCommunicationParameter &OD->list[29]
-#define OD_ENTRY_H180B_TPDOCommunicationParameter &OD->list[30]
-#define OD_ENTRY_H1A00_TPDOMappingParameter &OD->list[31]
-#define OD_ENTRY_H1A01_TPDOMappingParameter &OD->list[32]
-#define OD_ENTRY_H1A02_TPDOMappingParameter &OD->list[33]
-#define OD_ENTRY_H1A03_TPDOMappingParameter &OD->list[34]
-#define OD_ENTRY_H1A04_TPDOMappingParameter &OD->list[35]
-#define OD_ENTRY_H1A05_TPDOMappingParameter &OD->list[36]
-#define OD_ENTRY_H1A06_TPDOMappingParameter &OD->list[37]
-#define OD_ENTRY_H1A07_TPDOMappingParameter &OD->list[38]
-#define OD_ENTRY_H1A08_TPDOMappingParameter &OD->list[39]
-#define OD_ENTRY_H1A09_TPDOMappingParameter &OD->list[40]
-#define OD_ENTRY_H1A0A_TPDOMappingParameter &OD->list[41]
-#define OD_ENTRY_H1A0B_TPDOMappingParameter &OD->list[42]
-#define OD_ENTRY_H6000_nucleo_VAR32_6000 &OD->list[43]
-#define OD_ENTRY_H6001_nucleo_VAR32_6001 &OD->list[44]
-#define OD_ENTRY_H6002_nucleo_VAR64_6002 &OD->list[45]
-#define OD_ENTRY_H6003_nucleo_VAR32_6003 &OD->list[46]
-#define OD_ENTRY_H6038_nucleo_Array &OD->list[47]
+#define OD_ENTRY_H1A00_TPDOMappingParameter &OD->list[22]
+#define OD_ENTRY_H1A01_TPDOMappingParameter &OD->list[23]
+#define OD_ENTRY_H1A02_TPDOMappingParameter &OD->list[24]
+#define OD_ENTRY_H6000_ALiex_Disco_VAR32_6000 &OD->list[25]
+#define OD_ENTRY_H6001_ALiex_Disco_VAR32_6001 &OD->list[26]
+#define OD_ENTRY_H6002_ALiex_Disco_VAR64_6002 &OD->list[27]
+#define OD_ENTRY_H6003_ALiex_Disco_VAR32_6003 &OD->list[28]
+#define OD_ENTRY_H6039_ALiex_Disco_Array &OD->list[29]
 
 
 /*******************************************************************************
